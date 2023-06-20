@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sri Image Design Center</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="Home" class="bgimage">
+            <div class="navbar">
+                <img src="Sri Image.png" class="Brand" alt="LOGO">
+                <ul id="navul">
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#WEDO">What We Do</a></li>
+                    <li><a href="#Brand">Brand Strategy</a></li>
+                    <li><a href="contact.html">Contact</a></li>                    
+                </ul>
+                <div id="hamb">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <script>
+                    var navul = document.getElementById('navul');
+                    var hamb = document.getElementById('hamb');
+                    hamb.addEventListener("click", ()=>{
+                        hamb.classList.toggle("active");
+                        navul.classList.toggle("active");
+                    });
+                </script>
+            </div>
+
+            <div  class="content">
+                <h2>Welcome To</h2>
+               <h1>Sri Image Design Center</h1>
+               <p id="WEDO">Training : Research : Design</p>
+               <a href="#">Explore</a>
+            </div>
+
+        </div>
+
+        <div  id="WEDO" class="colntainer">
+            <div class="row">
+                <div class="header">
+                    <h1>What We Do</h1>
+                </div>
+                <div class="content1">
+                    <div class="card">
+                        <img src="zetong-li-AEYbdyOH2cU-unsplash.jpg.png" alt="Training Team">
+                        <h4>Training</h4>
+                        <p>Sri Image design center has this sub department to training designers. As an initial attempt we focus on training graphics designers and painters. NVQ 04 - This course can be                       
+                        </p>
+                        <a href="" class="button">Read More</a>
+                    </div>
+                    <div class="card">
+                        <img src="research.jpg" alt="research">
+                        <h4>Research</h4>
+                        <p>The researches will be handled by this department and the research related service will be providing to the Graphics industry and Printing and packaging industry  in Sri Lanka.                            
+                        </p>
+                        <a href="" class="button">Read More</a>
+                    </div>
+                    <div class="card">
+                        <img src="designing.jpg.png" alt="Design">
+                        <h4>Design</h4>
+                        <p>The main focus on the design will be the Brand designs and under that the following areas will cover
+                            Logo Design
+                            Brand Manuals
+                            Packaging Design
+                            Export packaging
+                            Book designs                         
+                        </p>
+                        <a href="" id="Brand" class="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div  class="colntainer">
+            <div class="row">
+                <div class="header">
+                    <h1>Brand Strategy</h1>
+                    <p>for Design and Research departments</p>
+                </div>
+                <div class="content1">
+                    <div class="card">
+                        <img src="r2.png" alt="Training Team">
+                        <h4>Research</h4>
+                        <p>Research
+                            The researches will be handled by this department and the research related service will be providing to the Graphics industry and Printing and packaging industry  in Sri Lanka.                            
+                        </p>
+                        <a href="" class="button">Read More</a>
+                    </div>
+                    <div class="card">
+                        <img src="d2.png" alt="research">
+                        <h4>Design</h4>
+                        <p>The main focus on the design will be the Brand designs and under that the following areas will cover
+                            Logo Design
+                            Brand Manuals
+                            Packaging Design
+                            Export packaging
+                            Book designs 
+                        </p>
+                        <a href="" class="button">Read More</a>
+                    </div>
+                    <div class="card">
+                        <img src="target.png" alt="Design">
+                        <h4>Target</h4>
+                        <p>Exporters
+                            entrepreneurs
+                            business start-ups
+                            printing industry markerters
+                            advertising agencies
+                            (AD, ACD, CD, Designers)
+                            Samll and Medium entrepreneurs
+                            Freelancers                         
+                        </p>
+                        <a href="" class="button">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+        
+
+        <div>
+            <footer>&copy; Sri Image Design Center <br> <p> Design by Charitha Lakshitha</p></footer>
+        </div>
+
+
+        
+    </body>
+</html>

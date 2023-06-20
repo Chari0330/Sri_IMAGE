@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+}
+
+
+header{
+    position: absolute;
+    text-align: center;
+    width: 75%;
+    left: 12%;
+    top: 2rem;
+}
+
+header h1{
+    font-size: 30px;
+
+}
+
+.bgimage{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(contact\ us.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.empty{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 5);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.form{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 50%;
+    justify-content: center;
+    align-items: center;
+    min-height: 110vh;
+}
+
+.form .contact-form input{
+    width: 30rem;
+    background-color: transparent;
+    border: 0px;
+    border: transparent;
+    margin: 20px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 18px;
+    border-bottom: 2px solid #fff;
+}
+
+.form .contact-form input ~ span{
+    position: absolute;
+    left: 20px;
+    transition: 0.5s ease-in-out;
+    margin-top: 10px;
+
+}
+
+.form .contact-form input:focus ~ span{
+    transform:translateY(-20px);
+    pointer-events: none;
+}
+
+.form .contact-form textarea{
+    width: 30rem;
+    border: 0;
+    background-color: transparent;
+    margin: 20px;
+    font-size: 17px;
+    border-bottom: 2px solid #fff;
+}
+
+.form .contact-form textarea ~ span{
+    position: absolute;
+    left: 20px;
+    margin-top: 10px;
+    transition: 0.5s ease-in-out;
+}
+
+.form .contact-form textarea:focus ~ span{
+    transform: translateY(-20px);
+    pointer-events: none;
+}
+
+.form .contact-form input[type=submit]{
+    background-color: #9a4e39;
+    font-size: 18px;
+    width: 50%;
+    height: 40px;
+    margin-top: -5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form .contact-form input[type=submit]:hover{
+    background-color: #92661b;
+}
+
+@media screen and (max-width:900px){
+    body{
+        background-repeat:repeat-y;
+        overflow: auto;
+    }
+
+    header{
+        position:absolute;
+        top:20%;
+        left:0;
+        width:100%;
+    }
+
+    .empty{
+        height: 200vh;
+    }
+
+    .form{
+        position:absolute;
+        top: 100vh;
+        margin-left: 10%;
+    }
+
+    .content-form{
+        display: grid ;
+        grid-template-columns:repeat(3, 1fr);
+        grid-gap:0;
+        margin-top:53vh;
+        margin-left: 10vh;
+    }
+
+    .content section {
+        margin-left: 20vh;
+    }
+}
